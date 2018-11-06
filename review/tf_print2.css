@@ -1,51 +1,40 @@
 @charset "utf-8";
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 5
-   Tutorial Case
+   Review Assignment
    
-   Author:   
-   Date:     
+   Author:   Jeremy and Brett
+   Date:     11/6/18
    
-   Filename: tf_print.css
+   Filename: tf_print2.css
 
    This file contains the printer styles used with the Trusted
-   Friends page on articles of interest
+   Friends Parents Tips page
 
 */
 
 
 
 /* Hidden Objects */
-
+nav, header, h1, section#left, footer {
+    display: none;
+}
 
 
 /* Page Box Styles */
-
+@page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+}
 
 
 /* Header Styles */
 
-body > header {
-   text-align: right;
-}
-
-body > header > img {
-   display: block;
-   width: 100%;
-}
 
 
 /* Typography Styles */
-
-
-
-/* List Styles */
-
-
-
-/* Image Styles */
-
 
 
 
@@ -54,15 +43,5 @@ body > header > img {
 
 
 
-
 /* Page Break Styles */
-
-
-
-
-	
-
-
-
-
 
