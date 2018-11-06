@@ -5,8 +5,8 @@
    Tutorial 5
    Tutorial Case
    
-   Author:   
-   Date:     
+   Author:   Rob and Peter
+   Date:     11/6/18
    
    Filename: tf_navicon.css
    
@@ -21,6 +21,10 @@
    ===========
 */
 
+a#navicon {
+	display: none;
+}
+
 
 
 
@@ -30,6 +34,13 @@
 */
 
 @media only screen and (max-width: 480px) {
-
+	a#navicon {
+		display: block;
+	}
+nav.horizontal ul{
+	display: none;
+}
+a#navicon {
+}
    
 }
