@@ -4,8 +4,8 @@
    Tutorial 5
    Tutorial Case
    
-   Author:   
-   Date:     
+   Author:   seth and bethany
+   Date:     11/6/18
    
    Filename: tf_print.css
 
@@ -17,11 +17,17 @@
 
 
 /* Hidden Objects */
+nav.horizontal, aside, footer{ 
+	display: none;
+}
 
 
 
 /* Page Box Styles */
-
+@page{
+	size: 8.5in 11in;
+	margin: 0.5in;
+}
 
 
 /* Header Styles */
