@@ -145,8 +145,13 @@ body > footer {
 
 /* Pulldown Menu Styles */
 
+ul.submenu {
+    display: none;
+}
 
-
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+    display: block;
+}
 
 /* New Styles Added Below */
 
@@ -155,14 +160,24 @@ body > footer {
     =============================
 */
 
+@media only screen and (max-width: 480px) {
+    
+}
 
 /*  =================================
     Tablet styles: 481px or greater
     =================================
 */
 
+@media only screen and (min-width: 481px) {
+    
+}
 
 /*  =================================
     Desktop styles: 769px or greater
     =================================
 */
+
+@media only screen and (min-width: 769px) {
+    
+}
