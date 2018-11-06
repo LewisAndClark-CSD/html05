@@ -58,17 +58,53 @@ section.tips aside {
   flex: 1 2 250px;
 }
 
+nav.horizontal ul {
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+}
+
 
 /* ===============================
 	Mobile Devices: 0 to 480px
    ===============================
 */
+@media only screen and (max-width: 480px) {
+	nav.horizontal ul {
+		display: -webkit-flex;
+		display: flex;
 
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		height: 240px;
+	}
 
+	section#left {
+		-webkit-order: 99;
+		order: 99;
+	}
 
+	footer {
+		-webkit-order: 100;
+		order: 100;
+	}
+
+}
 
 
 /* ============================================
 	Tablet and Desktop Devices: 481px or more
    ============================================
 */
+@media only screen and (min-width: 481px) {
+	nav.horizontal ul {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		height: 160px;
+	}
+
+}
