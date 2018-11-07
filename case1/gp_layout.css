@@ -37,7 +37,7 @@ body{
     flex-flow: row wrap;
 }
 
-section#sheets {
+section#sheet {
     -webkit-flex: 3 1 301px;
     flex: 3 1 301px;
 }
@@ -92,17 +92,17 @@ article{
         flex: 1 1 auto;
    }
      
-     img[class$="size1"] {
+     img[class^="panel size1"] {
          width: 100%;
      }
      
-      img[class$="size2"] {
+      img[class^="panel size2"] {
          width: 60%;
      }
-      img[class$="size3"] {
+      img[class^="panel size3"] {
          width: 40%;
      }
-      img[class$="size4"] {
+      img[class^="panel size4"] {
          width: 30%;
      }
 
