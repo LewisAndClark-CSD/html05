@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Review Assignment
+   
+   Author:   Liz Bequette and Jason Cobb
+   Date:     11/7/18
+      
+   Filename: tf_styles4.css
+
+   This file contains the screen styles used with the Trusted
+   Friends blog tips
+
+*/
+
+
+/* Import Basic Design Styles Used on All Screens */
+
+@import url("tf_designs.css");
+
+
+
+/* General Flex Styles */
+
+body {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+section#left {
+	-webkit-flex-growth: 1;
+	flex-growth: 1;
+	-webkit-flex-shrink: 8;
+	flex-shrink: 8;
+	-webkit-flex-basis: 130px;
+	flex-basis: 130px;
+}
+
+section#right {
+	-webkit-flex-growth: 8;
+	flex-growth: 8;
+	-webkit-flex-shrink: 1;
+	flex-shrink: 1;
+	-webkit-flex-basis: 351px;
+	flex-basis: 351px;
+}
+
+section#tips {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+article {
+	-webkit-flex-growth: 2;
+	flex-growth: 2;
+	-webkit-flex-shrink: 1;
+	flex-shrink: 1;
+	-webkit-flex-basis: 351px;
+	flex-basis: 351px;
+}
+
+aside {
+	-webkit-flex-growth: 1;
+	flex-growth: 1;
+	-webkit-flex-shrink: 2;
+	flex-shrink: 2;
+	-webkit-flex-basis: 250px;
+	flex-basis: 250px;
+}
+
+nav.horizontal ul {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;	
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+/* ===============================
+	Mobile Devices: 0 to 480px 
+   ===============================
+*/
+	
+
+
+
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+
+
