@@ -23,6 +23,9 @@
 
 /* General Flex Styles */
 body {
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -ms-flexbox;
 	display: -webkit-flex;
   display: flex;
 
