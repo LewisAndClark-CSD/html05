@@ -24,6 +24,8 @@
 body {
     display: -webkit-flex;
     display: flex;
+    display: -moz-box;
+    display: -ms-flexbox;
     
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
