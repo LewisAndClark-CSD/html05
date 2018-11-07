@@ -81,11 +81,22 @@
 			-webkit-order:99;
 			order: 99;
 		}
-		footer [
+		footer {
 		-webkit-order: 100;
 		order:100;
-		]
-	}
+		}
+		a#navicon {
+			display: block;
+		}
+
+		nav.horizontal ul {
+			display: none;
+		}
+
+		a#navicon:hover+ul, nav.horizontal ul:hover {
+			display: block;
+		}
+}
 
 
 
@@ -95,3 +106,9 @@
 	Tablet and Desktop Devices: 481px or more
    ============================================
 */
+
+@media only screen and (min-width: 481px) {
+	nav.horizontal ul {
+		height: 160px;
+	}
+}
