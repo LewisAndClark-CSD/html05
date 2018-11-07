@@ -176,7 +176,7 @@ a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
 	=======================
 */
 
-@media only scren and (min-width: 481px) {
+@media only screen and (min-width: 481px) {
 	
 	ul.mainmenu > li {
 		float: left;
