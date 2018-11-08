@@ -19,7 +19,7 @@
 
 /* Hidden Objects */
 
-nav, header > h1, section#left, footer {
+nav, body > header > h1, section#left, body > footer {
 	display: none;
 }
 
@@ -33,7 +33,7 @@ nav, header > h1, section#left, footer {
 
 /* Header Styles */
 
-body > header {
+body > header >img {
 	display: block;
 	width: 100%;
 }
@@ -45,7 +45,7 @@ article > header {
 	margin-bottom: 0.2in;
 }
 
-article > h1 {
+article h1 {
 	font-size: 24pt;
 	line-height: 26pt;
 }
@@ -55,20 +55,26 @@ aside {
 	margin-top: 0.3in;
 }
 
-aside > h1 {
+aside h1 {
 	font-size: 18pt;
 	line-height: 20pt;
 }
 
-aside > img {
+aside img {
 	width: 0.8in;
+}
+
+p {
+	font-size: 12pt;
+	margin-top: 0.1in;
+	margin-bottom: 0.1in;
 }
 
 /* Hypertext Styles */
 
 a {
 	color: black;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 a::after {
