@@ -33,10 +33,12 @@ body {
 }
 
 section#left {
-	flex: 1 8 130px;
+	-webkit-flex:  1 8 103px;
+	flex: 1 8 103px;
 }
 
 section#right {
+	-webkit-flex:  8 1 351px;
 	flex: 8 1 351px;
 }
 
@@ -66,35 +68,37 @@ nav.horizontal ul {
    ===============================
 */
 @media only screen and (max-width: 480px) {
-	
 	nav.vertical ul{
-		display: flex;
-		-webkit-flex-wrap: column wrap;
-		flex-direction: column;
+		display: -webkit-flex;
+		display:flex;
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
 		height: 240px;
 	}
 	
-	section#left {
+	section#left{
+		-webkit-order: 99;
 		order: 99;
 	}
 	
-	footer {
+	footer{
+		-webkit-order: 100;
 		order: 100;
 	}
-	
-	a#navicon {
+
+	a#navicon{
 		display: block;
 	}
 	
-	nav.horizontal ul{
+	nav.horizontal ul {
 		display: none;
 	}
 	
-	a#navicon:hover+ul, nav.horizontal ul:hover {
+	a#navicon:hover+ul, nav.horizontal ul:hover{
 		display: block;
 	}
-
 }
+
 
 
 
