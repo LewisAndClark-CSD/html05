@@ -18,7 +18,7 @@
 
 
 /* Hidden Objects */
-section#left, header, nav, h1, footer{
+section#left, body > header > h1, nav, body > footer{
 	display: none;
 }
 
@@ -32,7 +32,7 @@ section#left, header, nav, h1, footer{
 
 
 /* Header Styles */
-img#logo {
+header img {
 	display: block;
 	width: 100%;
 }
@@ -43,7 +43,7 @@ img#logo {
 article > header {
 	margin-bottom: 0.2in;
 }
-article > h1 {
+article h1 {
 	font-size: 24pt;
 	line-height: 26pt;
 }
@@ -55,7 +55,7 @@ aside > h1 {
 	font-size: 18pt;
 	line-height: 20pt;
 }
-aside > img {
+aside img {
 	width: 0.8in;
 }
 p {
