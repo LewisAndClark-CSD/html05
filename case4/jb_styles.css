@@ -14,3 +14,137 @@
    Jersey Buoys home page
 
 */
+
+html {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 100%;
+  grid-template-areas: ". Actual_Content .";
+}
+
+body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 7% 8% 55% 15%;
+  grid-template-areas: "header" "Nav1" "Nav2" "container" "footer";
+  grid-area: Actual_Content;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100%;
+  grid-template-areas: "logo headimg";
+  grid-area: header;
+}
+
+.headimg { grid-area: headimg; }
+
+.logo { grid-area: logo; }
+
+.container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
+  grid-template-areas: "paragraph slang";
+  grid-area: container;
+}
+
+.paragraph { grid-area: paragraph; }
+
+.slang { grid-area: slang; }
+
+.Nav2 { grid-area: Nav2; }
+
+.footer { grid-area: footer; }
+
+.Nav1 { grid-area: Nav1; }
+
+
+@media all and (-ms-high-contrast:none) {
+  html {
+    display: -ms-grid;
+    -ms-grid-columns: 25% 50% 25%;
+    -ms-grid-rows: 100%;
+  }
+
+  body {
+    display: -ms-grid;
+    -ms-grid-columns: 100%;
+    -ms-grid-rows: 15% 7% 8% 55% 15%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 2;
+    -ms-grid-col-span: 1;
+  }
+
+  .header {
+    display: -ms-grid;
+    -ms-grid-columns: 20% 80%;
+    -ms-grid-rows: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 1;
+    -ms-grid-col-span: 1;
+  }
+
+  .headimg {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 2;
+    -ms-grid-col-span: 1;
+  }
+
+  .logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 1;
+    -ms-grid-col-span: 1;
+  }
+
+  .container {
+    display: -ms-grid;
+    -ms-grid-columns: 70% 30%;
+    -ms-grid-rows: 100%;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 1;
+    -ms-grid-col-span: 1;
+  }
+
+  .paragraph {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 1;
+    -ms-grid-col-span: 1;
+  }
+
+  .slang {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 2;
+    -ms-grid-col-span: 1;
+  }
+
+  .Nav2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 1;
+    -ms-grid-col-span: 1;
+  }
+
+  .footer {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 1;
+    -ms-grid-col-span: 1;
+  }
+
+  .Nav1 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-col: 1;
+    -ms-grid-col-span: 1;
+  }
+
+}
