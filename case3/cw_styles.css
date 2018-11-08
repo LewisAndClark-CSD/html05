@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 3
+   
+   Author:   Dylan B and Lane D
+   Date:      11/8/18
+   
+   Filename: cw_styles.css
+
+   This file contains the screen styles used with the 
+   Cauli-Wood Gallery home page
+
+*/
+
+
+/* Import Basic Design Styles  */
+
+@import url("cw_designs.css");
+
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+
+nav#bottom ul {
+    display: -webkit-flex;
+    display: flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    
+    
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+nav#bottom ul li {
+    flex-basis: 150px;
+}
+
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+	
+
+
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
