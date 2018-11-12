@@ -31,8 +31,8 @@ body {
 }
 
 section#left {
-	-webkit-flex: 1 8 351px;
-	flex: 1 8 351px;
+	-webkit-flex: 1 8 130px;
+	flex: 1 8 130px;
 }
 
 section#right {
