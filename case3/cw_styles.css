@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 3
+   
+   Author:   Peter and Rob
+   Date:      11/12/18
+   
+   Filename: cw_styles.css
+
+   This file contains the screen styles used with the 
+   Cauli-Wood Gallery home page
+
+*/
+
+
+/* Import Basic Design Styles  */
+
+@import url("cw_designs.css");
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+} 
+
+nav#bottom {
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+nav#bottom > ul {
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+}
+	
+
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+	
+@media only screen and (max-width: 480px) {
+	body {
+		color: rgb(211, 211, 211);
+		background-color: rgb(51, 51, 51);
+	}
+	
+	aside, article > img, section#spotlight {
+		display: none;
+	}
+	nav#top > ul {
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-size: 2.2em;
+	-webkit-flex: 1 1 130px;
+	flex: 1 1 130px;
+}
+	nav#top ul li:nth-of-type(1) {
+		background-image: url(cw_image01.png); 
+		background-repeat: no-repeat;  
+		background-size: cover;
+	}
+	nav#top ul li:nth-of-type(2) {
+		background-image: url(cw_image02.png); 
+		background-repeat: no-repeat;  
+		background-size: cover;
+	}
+	nav#top ul li:nth-of-type(3) {
+		background-image: url(cw_image03.png); 
+		background-repeat: no-repeat;  
+		background-size: cover;
+	}
+	nav#top ul li:nth-of-type(4) {
+		background-image: url(cw_image04.png); 
+		background-repeat: no-repeat;  
+		background-size: cover;
+	}
+	nav#top ul li:nth-of-type(5) {
+		background-image: url(cw_image05.png); 
+		background-repeat: no-repeat;  
+		background-size: cover;
+	}
+	nav#top ul li:nth-of-type(6) {
+		background-image: url(cw_image06.png); 
+		background-repeat: no-repeat;  
+		background-size: cover;
+	}
+	
+	p#links {
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}	
+
+a {
+	color: white;
+	background-color: rgb(220, 27, 27);
+	border-radius: 20px;
+	padding: 20px;
+	text-decoration: none;
+}
+
+}
+
+
+}
+
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-with: 481px) {
+	
+body {
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+} 
+
+body> article, body > aside 
