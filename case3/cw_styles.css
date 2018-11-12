@@ -90,14 +90,23 @@ nav#bottom ul{
         background: url("cw_image06.png") 100% no-repeat;
     }
     
-    p#links a {
+    p#links {
         display: -webkit-flex;
         display: flex;
         -webkit-flex-flow: row nowrap;
         flex-flow: row nowrap;
-        -webkit-justify-content: center;
-        justify-content: center;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
     }
+    
+    p#links a {
+        color: white;
+        background-color: rgb(220, 27, 27);
+        border-radius: 20px;
+        padding: 10px 10px 10px 10px;
+        text-decoration: none;
+    }
+    
 }
 
 
@@ -105,4 +114,51 @@ nav#bottom ul{
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
+@media only screen and (min-width: 481px) {
+    body {
+        display: -webkit-flex;
+        display: -khtml-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        -khtml-flex-flow: row wrap;
+        -moz-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        -o-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+    
+    article {
+        -webkit-flex: 2 1 400px;
+        flex: 2 1 400px;
+    }
+    
+    aside {
+        -webkit-flex: 1 2 200px;
+        flex: 1 2 200px;
+    }
+    
+    nav#top ul {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        background-color: rgb(51, 51, 51);
+        height: 50px;
+    }
+    
+    nav#top li {
+        -webkit-flex: 1 1 80px;
+        flex: 1 1 80px;
+    }
+    
+    p#links {
+        display: none;
+    }
+}
