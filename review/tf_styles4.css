@@ -24,8 +24,11 @@
 /* General Flex Styles */
 
 	body {
-		display: -webkit-flex;
-		display: flex;
+		display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 	}
@@ -41,8 +44,11 @@
 	}
 
 	section.tips {
-		display: -webkit-flex;
-		display: flex;
+		display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 	}
@@ -58,8 +64,11 @@
 	}
 
 	nav.horizontal ul{
-		display: -webkit-flex;
-		display: flex;
+		display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
 		-webkit-flex-flow: column wrap;
 		flex-flow: column wrap;
 	}
@@ -70,8 +79,11 @@
 	@media only screen and (max-width: 480px){
 
 		ul{
-			display:-webkit-flex;
-			display: flex;
+			display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
 			-webkit-flex-flow: column wrap;
 			felx-flow: column wrap;
 			height: 240px;

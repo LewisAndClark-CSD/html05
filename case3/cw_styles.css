@@ -26,8 +26,11 @@
    ===============================
 */
 nav#bottom {
-	display: -webkit-flex;
-	display: flex;
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 	-webkit-flex-flow: row nowrap;
 	flex-flow: row nowrap;
 	justify-content: center;
@@ -52,8 +55,11 @@ nav#bottom ul {
 		display: none;
 	}
 	nav#top ul {
-		display: -webkit-flex;
-		display: flex;
+		display: -webkit-box;
+	  display: -moz-box;
+	  display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
 		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
 	}
@@ -101,7 +107,7 @@ nav#bottom ul {
    ============================================
 */
 @media only screen and (min-width: 481px){
-	
+
 	body{
 		display:-webkit-flex;
 		display:flex;
@@ -112,7 +118,7 @@ nav#bottom ul {
 		-webkit-flex: 2 1 400px;
 		flex: 2 1 400px;
 	}
-	
+
 	aside {
 		-webkit-flex: 1 2 200px;
 		flex: 1 2 200px;
@@ -134,7 +140,3 @@ nav#bottom ul {
 		display:none;
 	}
 }
-
-
-
-
