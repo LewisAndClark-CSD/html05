@@ -5,8 +5,8 @@
    Tutorial 5
    Case Problem 3
    
-   Author:   
-   Date:      
+   Author:   Seth and Bethany
+   Date:      11/13/18
    
    Filename: cw_styles.css
 
@@ -14,6 +14,8 @@
    Cauli-Wood Gallery home page
 
 */
+
+@import url("cw_designs.css");
 
 
 /* Import Basic Design Styles  */
