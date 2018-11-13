@@ -20,6 +20,11 @@
 
 /* Import Basic Design Styles  */
 
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
 nav#bottom ul{
 	display: -webkit-flex;
 	display: flex;
@@ -35,13 +40,6 @@ nav#bottom ul li{
 
 
 /* ===============================
-	General Styles for All Devices
-   ===============================
-*/
-
-
-
-/* ===============================
 	Mobile Styles up to 480 pixels
    ===============================
 */
@@ -54,6 +52,16 @@ nav#bottom ul li{
 	
 	aside, article > img, section#spotlight{
 		display: none;
+	}
+	
+	nav#top ul{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		font-size: 2.2em;
+		-webkit-flex: 1 1 130px;
+		flex: 1 1 130px;
 	}
 	
 }
