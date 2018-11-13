@@ -20,6 +20,18 @@
 
 /* Import Basic Design Styles  */
 
+nav#bottom ul{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+nav#bottom ul li{
+	-webkit-flex-basis: 150px;
+	flex-basis: 150px;
+}
 
 
 /* ===============================
@@ -33,7 +45,18 @@
 	Mobile Styles up to 480 pixels
    ===============================
 */
+@media only screen and (max-width: 480px) {
 	
+	body {
+		color: rgb(211, 211, 211);
+		background-color: rgb(51, 51, 51);
+	}
+	
+	aside, article > img, section#spotlight{
+		display: none;
+	}
+	
+}
 
 
 
