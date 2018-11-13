@@ -8,7 +8,7 @@
               
     Jersey Buoys home page
     Author: Brett F./Jeremy
-    Date: 11/12/2018  
+    Date:   11/12/2018  
 
     Filename: jb_home.html
     -->
@@ -16,6 +16,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" 
     content="width=device-width, initial-scale=1" />
+    <link href="jb_reset.css" rel="stylesheet" media="all" />
+    <link href="jb_layout.css" rel="stylesheet" media="all" />
     <link href="jb_styles.css" rel="stylesheet" media="all" />
     <title>Jersey Buoys Surfing School</title>
       
@@ -24,7 +26,8 @@
   <body>
     <header>
       <img src="jb_logo.png" alt="Jersey Buoys" />
-      <nav>
+      <nav class="horizontal">
+        <a href="#" id="navicon"><img src="jb_navicon.png" alt="" /></a>
         <ul>
           <li> <a href="#"> Home </a> </li>
           <li> <a href="#"> Classes </a> </li>
@@ -34,9 +37,11 @@
           <li> <a href="#"> Staff </a> </li>
         </ul>
       </nav>
-                  
+    </header>
+    
+    <aside id="navs">
       <h1> Classes </h1>
-      <nav>
+      <nav class="classes">
         <ul>
           <li> <a href="#"> Intro Surfing </a> </li>
           <li> <a href="#"> Surfing I </a> </li>
@@ -48,7 +53,7 @@
 
       <h1> Camps </h1>
       <nav>
-        <ul>
+        <ul class="camps">
           <li> <a href="#"> 1-Day Grommets </a> </li>
           <li> <a href="#"> 3-Day Grommets </a> </li>
           <li> <a href="#"> 5-Day Grommets </a> </li>
@@ -59,7 +64,7 @@
       </nav>
 
       <h1> Store </h1>
-      <nav>
+      <nav class="store">
         <ul>
           <li> <a href="#"> Gear </a> </li>
           <li> <a href="#"> Quiver </a> </li>
@@ -69,9 +74,9 @@
           <li> <a href="#"> Tracking </a> </li>
         </ul>
       </nav>
-    </header>
+    </aside>
 
-    <p>
+    <p id="info">
       Come enjoy the excitement of riding the waves along the Jersey Shore with Jersey Buoys. 
       Our nationally-accredited school brings its 22 years of experience in helping you become 
       the surfer you've dreamed of becoming.
@@ -90,7 +95,7 @@
       appointment, grab a board from the quiver and head to the Green Room. 
     </p>
                 
-    <aside>
+    <aside id="slang">
       <h1>Surfer Slang</h1>
 
       <dl> 
@@ -125,17 +130,15 @@
               
     <footer> 
       Jersey Buoys
-      <br />
       Owner: Tony Gallo
 
       <address>
-        MAILING ADDRESS
-        141 Hodad Drive
+        MAILING ADDRESS &#9642;
+        141 Hodad Drive &#9642;
         Ocean City, NJ 08226 
       </address>
 
       <a href="tel:1-609-555-7873"> (609) 555-7873</a>
-      <br />
 
       <a href="mailto:gall@example.com/surf"> gall@example.com/surf </a> 
     </footer>
