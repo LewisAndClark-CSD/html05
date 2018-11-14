@@ -44,7 +44,7 @@ nav#bottom ul {
    ===============================
 */
 
-/*Note: like the annoyance of the review, for some reason, the mobile screen refuses to work, despite it being correct (at least, the css should be)
+/*Note: like the annoyance of the review, for some reason, the mobile screen refuses to work, despite it being correct (at least, the css should mostly be correct)
 If you remove the "and (max-width: 480px)" it should display what the mobile screen should look like. Sorry it has problems for some reason. */
 
 @media only screen and (max-width: 480px) {
