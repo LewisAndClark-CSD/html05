@@ -133,6 +133,7 @@ nav#bottom ul {
 		align-items: center;
 	}
 	nav#top ul li{
+		max-width:80px;
 		-webkit-flex: 1 1 80px;
 		flex: 1 1 80px;
 	}
