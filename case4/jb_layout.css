@@ -49,6 +49,7 @@ body aside#navs {
   border-radius: 15px;
   margin-top: 2px;
   margin-left: 5px;
+  margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
@@ -73,27 +74,44 @@ p {
   text-align: center;
 }
 
+aside#slang {
+  background-image: url("jb_back1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+aside#slang h1 {
+  font-size: 1.2em;
+}
+
+aside#slang dt {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+
 /* Horizontal Navigation Styles */
 
 nav.horizontal {
-   background-color: rgb(91, 91, 91);
+  background-color: rgb(91, 91, 91);
 }
 
 nav.horizontal ul li {
-   line-height: 2em;
-   padding-left: 10px;
-   width: 100%;
+  line-height: 2em;
+  padding-left: 10px;
+  width: 100%;
 }
 
 nav.horizontal ul li a {
-   color: white;
-   display: block;
+  color: white;
+  display: block;
 }
 
 nav.horizontal::after {
-   content: "";
-   display: table;
-   clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 aside#navs {
   clear: both;
