@@ -42,18 +42,26 @@ body{
     order: 100;
   }
   
-  body header img#logo {
+  body header {
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+  
+  body img#logo {
     -webkit-order: 2;
     order: 2;
   }
   
-  body header img#shark {
-    display: -webkit-flex;
-    display: flex;
+  body img#shark {
     -webkit-order: 1;
     order: 1;
+  }
+  
+  a#navicon {
+    -webkit-order: 3;
+    order: 3;
   }
   
   body header nav.horizontal ul {
