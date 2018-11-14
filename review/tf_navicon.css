@@ -4,13 +4,13 @@
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 5
    Tutorial Case
-   
-   Author:   
-   Date:     
-   
+
+   Author: Joshua Bentley, Austin A.
+   Date: 11/6/18
+
    Filename: tf_navicon.css
-   
-   This file contains styles used to control 
+
+   This file contains styles used to control
    a navicon menu.
 
 */
@@ -20,16 +20,26 @@
    Base Styles
    ===========
 */
-
-
-
+a#navicon {
+  display: none;
+}
 
 /* ===============================
-   Mobile Devices: 0 to 480px 
+   Mobile Devices: 0 to 480px
    ===============================
 */
 
 @media only screen and (max-width: 480px) {
+  a#navicon {
+    display: block;
+  }
 
-   
+  nav.horizontal ul {
+    display: none;
+  }
+
+  a#navicon:hover+ul, nav.horizontal ul:hover {
+    display: block;
+  }
+
 }

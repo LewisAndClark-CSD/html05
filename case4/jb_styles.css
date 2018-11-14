@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+
+   Author: Joshua Bentley, Austin A.
+   Date: 11/6/18
+
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the
+   Jersey Buoys home page
+
+*/
+
+header {
+  display: none;
+}
+
+nav#MainNav {
+  text-align: center;
+}
+
+nav#MainNav ul a li {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+  background-color: yellow;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.5%;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+nav#MainNav ul a li:hover {
+  background-color: grey;
+  color: black;
+  text-decoration: none;
+}
+
+nav#horizontal {
+  width: 100%;
+}
+
+nav#horizontal ul {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+nav#horizontal ul li {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+nav#horizontal ul#main2 {
+  width: 100%;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+  text-align: center;
+}
+
+nav#horizontal ul#main2 li {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+  padding: 3%;
+  background-color: yellow;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+
+p {
+  padding: 1.5%;
+}
+
+footer {
+  text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+  aside {
+    display: none;
+  }
+
+  div.container {
+    background-color: rgb(247, 237, 190);
+    box-shadow: inset 1px 1px 40px black;
+  }
+
+  nav#horizontal ul.submenu {
+    background-color: lightblue;
+    padding: 1.5%;
+    text-align: center;
+  }
+
+  nav#horizontal ul.submenu a {
+    padding: 0.4%;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+  }
+
+  nav#MainNav{
+		-webkit-order: 99;
+		order: 99;
+	}
+
+	footer {
+    background-color: lightblue;
+		-webkit-order: 100;
+		order: 100;
+	}
+
+
+}
+
+
+
+
+@media only screen and (min-width: 481px) {
+  html {
+    display: none;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 769px) {
+  html {
+    display: block;
+  }
+  header {
+    width: 100%;
+    display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: flex-start;
+  	align-items: stretch;
+  	align-content: stretch;
+    background-color: indigo;
+  }
+
+  header img {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+
+  html {
+    background-color: tan;
+  }
+
+  body {
+    width: 40%;
+    margin-left: 30%;ock;
+    margin-right: 30%;
+    background-color: white;
+    box-shadow: 0px 20px 40px black;
+  }
+
+  p.paragraph {
+    float: left;
+    width: 60%;
+  }
+
+  aside {
+    float: left;
+    width: 35%;
+  }
+
+  aside.slang ul li {
+    display: block;
+    clear: both;
+  }
+
+  aside.slang ul li h2 {
+    margin-top: 4%;
+    clear: both;
+  }
+
+  aside.slang ul li p {
+    clear: both;
+  }
+
+  nav#horizontal{
+    display: none;
+  }
+
+}
