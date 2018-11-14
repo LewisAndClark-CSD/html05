@@ -75,6 +75,9 @@ nav.horizontal ul {
 @media only screen and (max-width: 480px) {
 	
 nav.vertical ul {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: column wrap;
