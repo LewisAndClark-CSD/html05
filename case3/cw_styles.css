@@ -24,6 +24,15 @@
 	General Styles for All Devices
    ===============================
 */
+body {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}	 
 
 nav#bottom {
 	display: -webkit-flex;
@@ -117,7 +126,7 @@ nav#bottom ul {
    ============================================
 */
 
-@media only screen and (min-with: 481px) {
+@media only screen and (min-width: 481px) {
 	
 	body {
 		display: -webkit-flex;
