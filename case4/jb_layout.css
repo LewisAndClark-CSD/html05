@@ -114,6 +114,7 @@ nav.horizontal ul li {
 nav.horizontal ul li a {
   color: white;
   display: block;
+  text-align: center;
 }
 
 nav.horizontal::after {
