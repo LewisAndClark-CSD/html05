@@ -37,6 +37,7 @@ div.column-1-4 {
 div.column-3-4 {
   float: left;
   width: 75%;
+  text-align: center;
 }
 
 div.column-1 {

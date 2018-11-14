@@ -61,6 +61,11 @@ body{
   body > footer {
     font-size: 0.8em;
   }
+  
+  div.column-3-4 {
+    width: 100%;
+    background-image: url("jb_back3.png");
+  }
 }
     
 /* ===================================================
