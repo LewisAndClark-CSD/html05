@@ -27,10 +27,11 @@
 */
 
 nav#bottom ul {
-    display: -webkit-flex;
-    display: flex;
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 
 
     -webkit-flex-flow: row nowrap;
@@ -62,10 +63,11 @@ nav#bottom ul li {
     }
 
     nav#top ul {
-        display: -webkit-flex;
-        display: flex;
+        display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
 
 
         -webkit-flex-flow: row wrap;
@@ -103,10 +105,11 @@ nav#bottom ul li {
     }
 
     p#links {
-        display: -webkit-flex;
-        display: flex;
+        display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
 
 
         -webkit-flex-flow: row nowrap;
@@ -132,10 +135,11 @@ nav#bottom ul li {
 @media only screen and (min-width: 481px) {
 
     body {
-        display: -webkit-flex;
-        display: flex;
+        display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
 
 
         -webkit-flex-flow: row wrap;
@@ -153,10 +157,11 @@ nav#bottom ul li {
     }
 
     nav#top ul {
-        display: -webkit-flex;
-        display: flex;
+        display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
 
 
         -webkit-flex-flow: row nowrap;

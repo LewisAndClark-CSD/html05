@@ -24,10 +24,11 @@
 /* Flex Layout Styles */
 
 body {
-    display: -webkit-flex;
-    display: flex;
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -41,6 +42,9 @@ nav#hole_list {
 article {
     -webkit-flex: 3 1 341px;
     flex: 3 1 341px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -58,10 +62,11 @@ section#summary {
 }
 
 aside {
-    display: -webkit-flex;
-    display: flex;
+    display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -115,6 +120,9 @@ aside div {
     }
     
     nav.horizontal ul {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
         display: -webkit-flex;
         display: flex;
         -webkit-flex-flow: row nowrap;
