@@ -14,149 +14,188 @@
    Jersey Buoys home page
 
 */
-html{
-  background: linear-gradient(#5896CE, white);
-  height: 100%
-}
-body{
-	background-color:white;
-	margin-left: 10%;
-	margin-right: 10%;
-	height:100%;
-	margin-bottom:0px;
-	margin-top:0px;
-	padding-left: 1%;
-	padding-right:1%
+/* Desktop Styles */
+@media only screen and (min-width: 481px){
+  html{
+    background: linear-gradient(#5896CE, white);
+    height: 100%
+  }
+  body{
+  	background-color:white;
+  	margin-left: 10%;
+  	margin-right: 10%;
+  	height:100%;
+  	margin-bottom:0px;
+  	margin-top:0px;
+  	padding-left: 1%;
+  	padding-right:1%
 
-}
-/* Flex Styles */
-div#flex {
-  clear: both;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+  }
+  /* Flex Styles */
+  div#flex {
+    clear: both;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
 
-/* Header Nav Styles */
-header {
-  margin-bottom: 60px;
-  width:100%;
-}
-header nav ul li {
-  display: inline;
-  float: left;
-  text-align: center;
+  /* Header Nav Styles */
+  header {
+    margin-bottom: 60px;
+    width:100%;
+  }
+  header nav ul li {
+    display: inline;
+    float: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16.66%;
+    background-color: #6CAA41;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a#navicon {
+    display: none;
+  }
+
+  /* Vertical Nav Styles */
+  nav#vertical {
+    width: 20%;
+    background-color: #AEF5C0;
+    border-radius: 10px;
+    padding-right: 2%;
+    padding-left: 2%;
+    height: 80%;
+  }
+
+  nav#vertical ul li {
+    list-style-type: none;
+    line-height: 1em;
+  }
+
+  nav#vertical ul li a {
+    text-decoration: none;
+  }
+
+  nav#vertical ul li h2 {
+    line-height: 10px;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  /* Section Styles */
+  section {
+  	background-color: #5896ce;
+  	margin-left: 20px;
+  	margin-right:20px;
+    padding-left: 20px;
+    padding-right:20px;
+    border: solid 4px rgb(72, 121, 165);
+    height: 100%;
+    border-radius: 20px 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+
+  }
+  section p {
+  	font-size: 1.15em;
+  }
+  /* Article Styles */
+  article {
+    width: 35%;
+    padding-left: 10px;
+    height: 100%;
+    clear: both;
+  }
+
+  h2#slang {
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  article dt {
+  	font-weight: bold;
+  	text-decoration: underline;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  ul#surfer li{
+    max-height: 200px;
+  }
+
+  dl {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 16.66%;
-  background-color: #6CAA41;
-  font-family: 'Gloria Hallelujah', cursive;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: white;
+  }
+
+  ul li {
+    width: 100%;
+  }
+
+  dt {
+
+  }
+
+  dd {
+
+  }
+
+  /* Footer Styles */
+  footer {
+    clear: both;
+  	text-align: center;
+    	position:absolute;
+  	right: 0;
+  	bottom: 0;
+  	left:0;
+  	padding: 1em;
+  }
+
+  footer p {
+  	display: inline;
+  }
 }
 
-/* Vertical Nav Styles */
-nav#vertical {
-  width: 20%;
-  background-color: #AEF5C0;
-  border-radius: 10px;
-  padding-right: 2%;
-  padding-left: 2%;
-  height: 80%;
-}
 
-nav#vertical ul li {
-  list-style-type: none;
-  line-height: 1em;
-}
 
-nav#vertical ul li a {
-  text-decoration: none;
-}
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+  article {
+    display: none;
+  }
 
-nav#vertical ul li h2 {
-  line-height: 10px;
-  font-family: 'Gloria Hallelujah', cursive;
-}
+  section {
+    display: block;
+  }
 
-/* Section Styles */
-section {
-	background-color: #5896ce;
-	margin-left: 20px;
-	margin-right:20px;
-  padding-left: 20px;
-  padding-right:20px;
-  border: solid 4px rgb(72, 121, 165);
-  height: 100%;
-  border-radius: 20px 20px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+  footer p {
+    display: inline;
+  }
+  footer {
+    background-color: rgb(226, 200, 122);
+  }
 
-}
-section p {
-	font-size: 1.15em;
-}
-/* Article Styles */
-article {
-  width: 35%;
-  padding-left: 10px;
-  height: 100%;
-  clear: both;
-}
+  a#navicon {
+    display: block;
+  }
 
-h2#slang {
-  font-family: 'Gloria Hallelujah', cursive;
-}
+  nav.horizontal ul {
+    display: none;
+  }
 
-article dt {
-	font-weight: bold;
-	text-decoration: underline;
-}
-ul li {
-  list-style-type: none;
-}
-ul#surfer li{
-  display: flex;
-  flex-flow:row wrap;
-}
-}
-dl {
-display: block;;
-margin-left: auto;
-margin-right: auto;
-}
-
-ul li {
-  width: 100%;
-}
-
-dt {
-
-}
-dd {
-  width: 11.1%;
-}
-
-/* Footer Styles */
-footer {
-  clear: both;
-	text-align: center;
-  	position:absolute;
-	right: 0;
-	bottom: 0;
-	left:0;
-	padding: 1em;
-}
-
-footer p {
-	display: inline;
+  a#navicon:hover+ul, nav.horizontal ul:hover {
+    display: block;
+  }
 }
