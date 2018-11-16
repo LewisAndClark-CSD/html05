@@ -97,7 +97,6 @@
     padding-left: 20px;
     padding-right:20px;
     border: solid 4px rgb(72, 121, 165);
-    height: 100%;
     border-radius: 20px 20px;
     display: -webkit-box;
     display: -moz-box;
@@ -116,7 +115,6 @@
     width: 35%;
     padding-left: 10px;
     height: 100%;
-    clear: both;
   }
 
   h2#slang {
@@ -132,6 +130,13 @@
   }
   ul#surfer li{
     max-height: 200px;
+  }
+
+  ul#surfer {
+    display: flex;
+    width: 290%;
+    text-align: center;
+    margin-left: -60px;
   }
 
   dl {
@@ -166,18 +171,31 @@
   footer p {
   	display: inline;
   }
+  #imlazy{
+    display:none;
+  }
 }
 
 
 
 /* Mobile Styles */
 @media only screen and (max-width: 480px) {
+  body{
+    display:flex;
+    flex-flow: column wrap;
+  }
   article {
     display: none;
   }
 
-  section {
-    display: block;
+  #flex{
+    disply:flex;
+    order: 50;
+  }
+
+  #imlazy {
+    display:flex;
+    order: 1;
   }
 
   footer p {
@@ -185,6 +203,8 @@
   }
   footer {
     background-color: rgb(226, 200, 122);
+    text-align:center;
+    order: 100;
   }
 
   a#navicon {
@@ -197,5 +217,31 @@
 
   a#navicon:hover+ul, nav.horizontal ul:hover {
     display: block;
+  }
+
+  nav#vertical ul {
+    float: left;
+    width: 33%;
+  }
+  ul{
+    list-style-type:none;
+  }
+  nav#vertical{
+    display: flex;
+  }
+  #flex section{
+    display:none;
+  }
+  footer a{
+    font-size: 1.2em;
+  }
+
+  section {
+    display:flex;
+    flex-flow: column wrap;
+  }
+
+  div {
+    display: flex;
   }
 }
