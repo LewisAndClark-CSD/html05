@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author:   Seth and Bethany
+   Date:       11/14/18
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+
+/* General Styles */
+
+html{
+	background-color: rgb(89, 119, 249);
+}
+
+
+
+	p, address, h4, a, nav, h3{
+		color: rgb(0, 255, 42);
+	}
+}
+
+/* Flex Styles */
+
+nav#bottom {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+nav#bottom ul {
+	-webkit-flex-basis: 150px;
+	flex-basis: 150px;
+}
+
+li{
+	list-style: none;
+}
+
+
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+
+@media only screen and (max-width: 480px){
+	nav#top ul {
+		display: none;
+	}
+	
+	a#navicon:hover+ul, nav#top:hover {
+		display: block;
+	}
+	
+	section, article img{
+		display: none;
+	}
+	
+	article p{
+		float: left;
+	}
+	
+	aside#credit p a {
+		background-color: rgb(255, 38, 0);
+		font-size: 2.3em;
+	}
+	
+	header ul li a{
+		font-size: 2em;
+	}
+	
+	article {
+		-webkit-order: 99;
+		order: 99;
+		
+		margin-right: 75px;
+	}
+	
+		nav#bottom {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		justify-content: center;
+		font-size: 1.5em;
+		
+		-webkit-order: 100;
+		order: 100;
+	}
+
+	
+}
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+	
+	body {
+	width: 95%;
+	min-width: 320px;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(255, 0, 216);
+	box-shadow: rgb(51, 51, 51) 10px 0px 50px, rgb(51, 51, 51) -10px 0px 50px;
+	
+	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+	aside {
+		float: right;
+		padding-left: 20px;
+	}
+
+	a#navicon {
+			display: none;
+		}
+	
+	nav#top ul {
+		display: -webkit-flex;
+		display: flex;
+		
+		-webkit-flex-flow: row nowrap;
+		flex-flow: row nowrap;
+		
+		-webkit-flex: 1 1 auto;
+		flex: 1 1 auto;
+		
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+	}
+	
+		section {
+		-webkit-order: 99;
+		order: 99;
+	}
+	
+		nav#bottom {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		justify-content: center;
+		
+		-webkit-order: 100;
+		order: 100;
+	}
+	
+	img {
+		flex: 1 1 auto;
+		max-width: 95%;
+		
+	}
+	
+	p, h4, h3, img{
+		margin-left: 10px;
+	}
+
+	
+	
+	
+}
