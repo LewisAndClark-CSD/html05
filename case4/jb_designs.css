@@ -72,34 +72,34 @@ article p:nth-of-type(2) img {
    width: 45%;
    margin: 0px 0px 120px 50px;
    transform: translateY(60px) translateX(-0px) rotate(30deg);
-   box-shadow: rgba(70,36,37,1.00) 10px -10px 30px;
+   box-shadow: rgba(107, 244, 66,1.00) 10px -10px 30px;
 }
 
-section#spotlight {
+section#slang {
    background-color: rgb(171, 171, 171);
    padding-bottom: 15px;
 }
 
-section#spotlight h1 {
+section#slang h1 {
    font-size: 2.5em;
-   color: rgb(111, 111, 111);
+   color: rgb(107, 244, 66);
    text-shadow: white -2px 0px 1px,  white -5px 0px 30px;
    padding: 20px 15px 10px 0px;
    text-align: right
 }
 
-section#spotlight img {
+section#slang img {
    width: 35%;
    float: left;
    display: block;
    margin: 20px 20px 10px 15px;
 }
 
-section#spotlight p {
+section#slang p {
    margin-bottom: 0px;
 }
 
-section#spotlight::after {
+section#slang::after {
    content: "";
    display: table;
    clear: both;
@@ -121,6 +121,7 @@ aside h1 {
 
 aside a {
    color: rgb(234, 44, 44);
+   justify-content: space-around;
 }
 
 /* Description List */
@@ -143,26 +144,110 @@ footer {
    width: 100%;
 }
 
-nav#bottom {
-   background-color: rgb(220, 27, 27);
-   color: rgb(211, 211, 211);
-   padding: 15px;
+/* Case 2 Color Aside Styles*/
+	
+section#slang{
+   border-top: 5px solid rgb(151, 151, 151);
 }
 
-nav#bottom ul li {
-   font-size: 1em;
-   line-height: 1.8em;
+section#slang {
+   width: 90%;
+   margin: 10px;
+   border: 1px solid rgb(101, 151, 101);
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
 }
 
-nav#bottom ul a {
-   color: white;
-}
-
-footer p {
-   color: rgb(211, 211, 211);
-   font-size: 0.9em;
+section#slang {
+   font-size: 1.2em;
+   line-height: 2em;
    text-align: center;
-   background-color: black;
-   margin: 0px;
-   padding: 10px 0px;
+   border-bottom: 1px solid rgb(101, 151, 101);
+   border-radius: 15px 15px 0px 0px;
+}
+
+section#slang {
+   font-size: 1.1em;
+   margin: 10px;
+   text-align: center;
+}
+
+#div1 h1 {
+   background-color: rgb(88, 87, 255);
+   color: rgb(241, 255, 241);
+}
+
+#div1 {
+   background-color: rgb(158, 158, 255);
+}
+
+#div2 h1 {
+   background-color: rgb(128, 128, 0);
+   color: rgb(241, 255, 241);
+}
+
+#div2 {
+   background-color: rgb(228, 228, 30);
+}
+
+#div3 h1 {
+   background-color: rgb(207, 66, 207);
+   color: rgb(241, 255, 241);
+}
+
+#div3 {
+   background-color: rgb(232, 156, 232);
+}
+
+#div4 h1 {
+  background-color: rgb(88, 87, 255);
+   color: rgb(241, 255, 241);
+}
+
+#div4 {
+   background-color: rgb(158, 158, 255);
+}
+
+#div5 h1 {
+    background-color: rgb(128, 128, 0);
+   color: rgb(241, 255, 241);
+   }
+   
+#div5 {
+   background-color: rgb(228, 228, 30);
+}
+#div6 h1 {
+background-color: rgb(207, 66, 207);
+   color: rgb(241, 255, 241);
+}
+
+#div6 {
+   background-color: rgb(232, 156, 232);
+}
+
+#div7 h1 {
+   background-color: rgb(88, 87, 255);
+   color: rgb(241, 255, 241);
+}
+
+#div7 {
+  background-color: rgb(158, 158, 255);
+}
+
+#div8 h1 {
+    background-color: rgb(128, 128, 0);
+   color: rgb(241, 255, 241);
+}
+#div8 {
+   background-color: rgb(228, 228, 30);
+}
+
+#div9 h1 {
+   background-color: rgb(207, 66, 207);
+   color: rgb(241, 255, 241);
+}
+
+#div9 {
+  background-color: rgb(232, 156, 232);
 }
