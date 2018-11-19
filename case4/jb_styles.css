@@ -33,8 +33,14 @@ body {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
+body > * {
+	margin: 10px;
+}
 
 nav#links1 ul {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
@@ -58,13 +64,17 @@ section#links2 {
 	float: right;
 }
 
-section#slang {
+body > section#slang {
 	float: left;
 }
 
 section#slang h2{
 	font-size: 1.25em;
 }
+
+footer h1 {
+		font-size: 1.5em;
+	}
 
 
 /* ===============================
@@ -77,15 +87,13 @@ section#slang h2{
 	display: none;
 	}
 
-	a#navicon:hover+ul, nav.horizontal ul:hover {
+	a#navicon:hover+ul, a#navicon ul:hover {
 		display: block;
 		list-style-type: none;
-		background-color: blue;
-		
 	}
 	
 	footer a {
-	background-color: blue;
+	background-color: #add8e6;
 	border-radius: 20px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -94,16 +102,49 @@ section#slang h2{
 	text-decoration: none;
 }
 
-
+section#slang {
+	display: none;
 }
+
+address {
+	background-color: #98fb98;
+	border-radius: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+footer > section {
+	background-color: #ffa500;
+	border-radius: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
 	
+}
+
+article {
+	-webkit-order: 100;
+	order:100;
+}
+
+footer {
+	-webkit-order: 99;
+	order: 99;
+}
+
 /* ============================================
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
 @media only screen and (min-width:481px) {
 	
-	a#navicon {
+a#navicon {
 		display: none;
-	}
+}
+	
 }
