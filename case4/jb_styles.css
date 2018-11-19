@@ -20,11 +20,13 @@
 */
 
 html {
-	background-image: url(jb_back2.jpg);
+	background-image: url("jb_back3.jpg");
+	background-size: cover;
+	background-repeat: repeat;
 }
 
 body {
-	background-color: rgb(79, 146, 255);
+	background-image: url("jb_back2.jpg");
 	max-width: 1024px;
 	margin-left: auto;
 	margin-right: auto;
@@ -71,21 +73,28 @@ section#slang h2{
 */
 @media only screen and (max-width:480px) {
 	
-	nav#links1 {
-		display: none;
-	}
-	
 	nav.horizontal ul {
 	display: none;
 	}
 
 	a#navicon:hover+ul, nav.horizontal ul:hover {
 		display: block;
+		list-style-type: none;
+		background-color: blue;
+		
 	}
+	
+	footer a {
+	background-color: blue;
+	border-radius: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
 
-	aside {
-		display:none;
-	}
+
 }
 	
 /* ============================================
@@ -94,7 +103,7 @@ section#slang h2{
 */
 @media only screen and (min-width:481px) {
 	
-a#navicon {
-	display: none;
-}
+	a#navicon {
+		display: none;
+	}
 }
