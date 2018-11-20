@@ -14,3 +14,42 @@
    Jersey Buoys home page
 
 */
+/* General Styles */
+a#navicon {
+	display: none;
+}
+footer {
+	background-color: rgb( 151, 151, 151);
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 481px) {
+	a#navicon {
+		display: block;
+	}
+	nav ul {
+		display: none;
+	}
+	a#navicon:hover+ul, nav ul:hover {
+		display: block;
+	}
+		li#classes ul, li#camps ul, li#store ul {
+		display: block;
+	}
+	ul#slang {
+		display: none;
+	}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 480px) {
+	nav {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+	}
+}
