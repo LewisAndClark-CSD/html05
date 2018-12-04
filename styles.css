@@ -44,12 +44,13 @@ nav.horizontal li {
    float: left;
    line-height: 2em;
    text-transform: uppercase;
-	width: 16%;
+	width: 14%;
 }
 
 nav.horizontal a {
    display: block;
    font-size: 1em;
+   text-align: center;
 }
 
 nav.horizontal a:visited, nav.horizontal a:link {
